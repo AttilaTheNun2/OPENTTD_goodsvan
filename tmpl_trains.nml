@@ -1,47 +1,17 @@
-// temperate rail passenger wagon (full + empty)
-base_graphics spr2733(2733, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   2) }
+grf {
+	grfid: "AN\01\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+}
+railtypetable {
+    RAIL, ELRL, MGLV
+}
 
-// temperate rail coal wagon (empty)
-base_graphics spr2737(2737, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   259) }
 
-// temperate rail mail wagon (full + empty)
-base_graphics spr2741(2741, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   27) }
+replace [replace_goods_wagon] (2753) {
+		tmpl_train_4view_88length_29px(6,79,"gfx/temperate_railwagons_28px.png")
+	}
 
-// temperate rail oil wagon (full + empty)
-base_graphics spr2745(2745, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   130) }
 
-// temperate rail livestock wagon (full + empty)
-base_graphics spr2749(2749, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   104) }
-
-// temperate rail goods wagon (full + empty)
-base_graphics spr2753(2753, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   79) }
-
-// temperate rail grain wagon (empty)
-base_graphics spr2761(2761, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   205) }
-
-// temperate rail wood wagon (empty)
-base_graphics spr2765(2765, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   156) }
-
-// temperate rail steel wagon (empty)
-base_graphics spr2769(2769, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   180) }
-
-// temperate rail iron ore wagon (empty)
-base_graphics spr2773(2773, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   232) }
-
-// temperate rail valuables wagon (full + empty)
-base_graphics spr2777(2777, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  6,   52) }
-
-// temperate rail coal wagon (full)
-base_graphics spr2781(2781, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  133,   259) }
-
-// temperate rail grain wagon (full)
-base_graphics spr2785(2785, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  133,   205) }
-
-// temperate rail wood wagon (full)
-base_graphics spr2789(2789, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  133,   156) }
-
-// temperate rail steel wagon (full)
-base_graphics spr2793(2793, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  133,   180) }
-
-// temperate rail iron ore wagon (full)
-base_graphics spr2797(2797, "gfx/temperate_railwagons_28px.png") { tmpl_train_4view_88length_29px(  133,   232) }
